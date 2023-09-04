@@ -1,6 +1,13 @@
 /* CUSTOM PROPS */
 :root {
-
+  --color-green: #54e6af;
+  --color-green-light: #b3ffe2;
+  --color-grey: #2c344b;
+  --color-black: #121725;
+  --color-white: #ffffff;
+  --color-grey-lighter: #5a668a;
+  --color-grey-lightest: #c2cbe5;
+  --color-red: #fb3e3e;
 }
 
 :root[data-theme="light"] {
@@ -8,7 +15,12 @@
 }
 
 :root[data-theme="dark"] {
-
+  --color-bg-body: var(--color-black);
+  --color-text: var(--color-grey-lightest);
+  --color-primary: var(--color-green);
+  --color-primary-light: var(--color-green-light);
+  --color-bg-input: var(--color-grey);
+  --color-error: var(--color-red);
 }
 
 
