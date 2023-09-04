@@ -32,9 +32,12 @@ body {
   margin: 0;
   font-family: "Chivo", "Arial", sans-serif;
   font-size: 0.9375rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 166.667%;
-  background-color: #fff;
+  background-color: var(--color-bg-body);
+  background-image: url("../img/body-bg-mobile.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   color: var(--color-text);
 }
 
@@ -85,9 +88,9 @@ select:-webkit-autofill:focus {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1190px;
+  padding-left: 24px;
+  padding-right: 24px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -98,6 +101,122 @@ select:-webkit-autofill:focus {
   flex-grow: 1;
 }
 
+
+/* HIGHLIGHTED TEXT */
+.highlighted-text {
+  color: var(--color-primary);
+}
+
+
+/* LOGO */
+.logo {
+  display: block;
+  text-decoration: none;
+}
+
+.logo__img {
+  width: 135px;
+  height: 56px;
+}
+
+
+/* SUPPORTED PLATFORMS */
+.supported-platforms__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 0;
+}
+
+.supported-platforms__item {
+  flex-shrink: 0;
+}
+
+
+/* FORM */
+.form__group {
+  display: grid;
+  gap: 16px;
+}
+
+.form__field {
+  padding: 8px 32px;
+  border: 0;
+  border-radius: 28px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 2;
+  background-color: var(--color-bg-input);
+  color: var(--color-white);
+}
+
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 8px 32px;
+  border: 0;
+  border-radius: 28px;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 2;
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  box-shadow: 0px 25px 20px -20px rgba(84, 230, 175, 0.50);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: var(--color-primary-light);
+}
+
+.button:active {
+  opacity: 0.6;
+}
+
+
+/* ACCESS REQUEST */
+.access-request {
+  padding-top: 64px;
+  padding-bottom: 96px;
+}
+
+.access-request__container {
+  display: grid;
+}
+
+.access-request__logo {
+  display: block;
+  justify-self: center;
+  margin-bottom: 54px;
+}
+
+.access-request__heading {
+  margin-bottom: 16px;
+  font-size: 1.625rem;
+  font-weight: 300;
+  line-height: 146.154%;
+  color: var(--color-white);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.access-request__text {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.access-request__supported-platforms {
+  margin-bottom: 48px;
+}
+
+.access-request__form {
+}
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
@@ -105,5 +224,7 @@ only screen and (     -o-min-device-pixel-ratio: 2/1),
 only screen and (        min-device-pixel-ratio: 2),
 only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
-
+  body {
+    background-image: url("../img/body-bg-mobile@2x.png");
+  }
 }
