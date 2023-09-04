@@ -156,7 +156,7 @@ select:-webkit-autofill:focus {
 /* BUTTON */
 .button {
   display: inline-block;
-  padding: 8px 32px;
+  padding: 8px 28px;
   border: 0;
   border-radius: 28px;
   font-size: 0.875rem;
@@ -227,4 +227,96 @@ only screen and (                min-resolution: 2dppx) {
   body {
     background-image: url("../img/body-bg-mobile@2x.png");
   }
+}
+
+
+/* 768px */
+@media only screen and (min-width: 48em) {
+  body {
+    background-image: url("../img/body-bg-tablet.jpg");
+    background-size: 491px 767px;
+    background-position: right top;
+  }
+
+  .access-request {
+    padding-top: 50px;
+  }
+
+  .access-request__logo {
+    justify-self: flex-start;
+    margin-bottom: 152px;
+  }
+
+  .access-request__content {
+    display: grid;
+    max-width: 39.6875rem;
+    padding-top: 92px;
+    padding-bottom: 92px;
+    background-color: var(--color-bg-body);
+  }
+
+  .access-request__heading {
+    margin-bottom: 32px;
+    font-size: 3rem;
+    line-height: 116.667%;
+    text-align: left;
+  }
+
+  .access-request__text {
+    max-width: 27.8125rem;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+
+  .access-request__supported-platforms {
+    order: 1;
+  }
+
+  .access-request__form {
+    max-width: 26.6875rem;
+    margin-bottom: 64px;
+  }
+
+  .form__group {
+    position: relative;
+    z-index: 1;
+  }
+
+  .form__submit {
+    position: absolute;
+    z-index: 1;
+    right: 5px;
+    top: calc(50%);
+    transform: translateY(-50%);
+  }
+
+  .form__field {
+    padding: 14px 172px 14px 32px;
+  }
+
+  .supported-platforms__list {
+    justify-content: flex-start;
+    gap: 40px;
+  }
+
+  .supported-platforms__img--spotify {
+    width: 96px;
+    height: 29px;
+  }
+
+  .supported-platforms__img--apple-podcast {
+    width: 78px;
+    height: 29px;
+  }
+
+  .supported-platforms__img--google-podcasts {
+    width: 125px;
+    height: 18px;
+  }
+
+  .supported-platforms__img--pocket-casts {
+    width: 129px;
+    height: 26px;
+  }
+
 }
