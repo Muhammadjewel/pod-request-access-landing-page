@@ -29,7 +29,42 @@
 </head>
 <body>
 
+  <main class="main-content">
+    <div class="access-request">
+      <div class="container">
+        <a class="access-request__logo logo" href="index.html">
+          <img class="logo__img" src="img/logo.svg" alt="Pod logo" width="135" height="56">
+        </a>
+        <div>
+          <h1 class="access-request__heading"><span class="highlighted-text">Publish your podcasts</span> everywhere.</h1>
+          <p class="access-request__text">Upload your audio to Pod with a single click. We’ll then distribute your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts and more!</p>
+          <div class="access-request__supported-platforms supported-platforms">
+            <ul class="supported-platforms__list" role="list">
+              <li class="supported-platforms__item" role="listitem">
+                <img src="img/spotify.svg" alt="Spotify logo" width="56" height="17">
+              </li>
+              <li class="supported-platforms__item" role="listitem">
+                <img src="img/apple-podcast.svg" alt="Apple podcasts logo" width="45" height="17">
+              </li>
+              <li class="supported-platforms__item" role="listitem">
+                <img src="img/google-podcasts.svg" alt="Google podcasts logo" width="73" height="11">
+              </li>
+              <li class="supported-platforms__item" role="listitem">
+                <img src="img/pocket-casts.svg" alt="Pocket casts" width="77" height="15">
+              </li>
+            </ul>
+          </div>
 
+          <form class="access-request__form form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="form__group">
+              <input class="form__field" type="email" name="email" placeholder="Email address" aria-label="Email" required>
+              <button class="form__submit button" type="submit">Request Access</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </main>
 
   <script src="js/main.js"></script>
 </body>
