@@ -151,6 +151,21 @@ select:-webkit-autofill:focus {
   color: var(--color-white);
 }
 
+.form__error-message {
+  display: none;
+  position: absolute;
+  left: 32px;
+  top: calc(100% + 8px);
+  font-size: 0.75rem;
+  font-weight: bold;
+  line-height: normal;
+  color: var(--color-error);
+}
+
+.form__group--has-error .form__error-message {
+  display: block;
+}
+
 
 /* BUTTON */
 .button {

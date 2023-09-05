@@ -43,9 +43,10 @@
             </ul>
           </div>
 
-          <form class="access-request__form form" action="https://echo.htmlacademy.ru" method="POST">
+          <form class="access-request__form form" id="access-request-form" action="https://echo.htmlacademy.ru" method="POST">
             <div class="form__group">
-              <input class="form__field" type="email" name="email" placeholder="Email address" aria-label="Email" required>
+              <input class="form__field" type="email" name="email" placeholder="Email address" aria-label="Email">
+              <div class="form__error-message"></div>
               <button class="form__submit button" type="submit">Request Access</button>
             </div>
           </form>
