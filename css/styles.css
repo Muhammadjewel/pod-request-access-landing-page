@@ -8,13 +8,7 @@
   --color-grey-lighter: #5a668a;
   --color-grey-lightest: #c2cbe5;
   --color-red: #fb3e3e;
-}
 
-:root[data-theme="light"] {
-
-}
-
-:root[data-theme="dark"] {
   --color-bg-body: var(--color-black);
   --color-text: var(--color-grey-lightest);
   --color-primary: var(--color-green);
