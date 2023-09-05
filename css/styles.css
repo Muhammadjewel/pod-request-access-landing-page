@@ -285,6 +285,8 @@ only screen and (                min-resolution: 2dppx) {
 /* 768px */
 @media only screen and (min-width: 48em) {
   body {
+    font-size: 1.125rem;
+    line-height: 155.556%;
     background-image: url("../img/body-bg-tablet.jpg");
     background-size: 491px 767px;
     background-position: right top;
