@@ -166,6 +166,11 @@ select:-webkit-autofill:focus {
   display: block;
 }
 
+.form__success {
+  display: none;
+  color: var(--color-primary);
+}
+
 
 /* BUTTON */
 .button {
@@ -189,6 +194,12 @@ select:-webkit-autofill:focus {
 
 .button:active {
   opacity: 0.6;
+}
+
+.button:disabled {
+  background-color: var(--color-grey-lighter);
+  cursor: default;
+  pointer-events: none;
 }
 
 
