@@ -45,6 +45,11 @@ img {
   height: auto;
 }
 
+*:focus {
+  outline: 2px dashed var(--color-primary);
+  outline-offset: 4px;
+}
+
 
 /* AUTOFILL-STYLES */
 /*input:-webkit-autofill,
@@ -124,7 +129,7 @@ select:-webkit-autofill:focus {
 .supported-platforms__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 16px;
   padding: 0;
@@ -213,7 +218,8 @@ select:-webkit-autofill:focus {
   margin-bottom: 48px;
 }
 
-.access-request__form {
+.dots {
+  display: none;
 }
 
 
@@ -230,6 +236,32 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 
+/* 540px */
+@media only screen and (min-width: 33.75em) {
+  .access-request__form {
+    max-width: 26.6875rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .form__group {
+    position: relative;
+    z-index: 1;
+  }
+
+  .form__submit {
+    position: absolute;
+    z-index: 1;
+    right: 5px;
+    top: calc(50%);
+    transform: translateY(-50%);
+  }
+
+  .form__field {
+    padding: 14px 172px 14px 32px;
+  }
+}
+
 /* 768px */
 @media only screen and (min-width: 48em) {
   body {
@@ -238,8 +270,27 @@ only screen and (                min-resolution: 2dppx) {
     background-position: right top;
   }
 
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+    body {
+      background-image: url("../img/body-bg-tablet@2x.jpg");
+    }
+  }
+
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
   .access-request {
     padding-top: 50px;
+    padding-bottom: 0;
+    margin-bottom: 61px;
   }
 
   .access-request__logo {
@@ -270,28 +321,13 @@ only screen and (                min-resolution: 2dppx) {
 
   .access-request__supported-platforms {
     order: 1;
+    margin-bottom: 0;
   }
 
   .access-request__form {
-    max-width: 26.6875rem;
+    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 64px;
-  }
-
-  .form__group {
-    position: relative;
-    z-index: 1;
-  }
-
-  .form__submit {
-    position: absolute;
-    z-index: 1;
-    right: 5px;
-    top: calc(50%);
-    transform: translateY(-50%);
-  }
-
-  .form__field {
-    padding: 14px 172px 14px 32px;
   }
 
   .supported-platforms__list {
@@ -319,4 +355,56 @@ only screen and (                min-resolution: 2dppx) {
     height: 26px;
   }
 
+  .dots {
+    display: block;
+    margin-left: 30px;
+  }
+}
+
+/* 1024px */
+@media only screen and (min-width: 64em) {
+  body {
+    background-image: url("../img/body-bg-desktop.jpg");
+    background-size: 888px 640px;
+    background-position: right 130px;
+  }
+
+  @media
+  only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (   min--moz-device-pixel-ratio: 2),
+  only screen and (     -o-min-device-pixel-ratio: 2/1),
+  only screen and (        min-device-pixel-ratio: 2),
+  only screen and (                min-resolution: 192dpi),
+  only screen and (                min-resolution: 2dppx) {
+    body {
+      background-image: url("../img/body-bg-desktop@2x.jpg");
+    }
+  }
+
+  .access-request {
+    padding-top: 102px;
+  }
+
+  .access-request__logo {
+    margin-bottom: 102px;
+  }
+
+  .access-request__content {
+    padding-top: 88px;
+    padding-bottom: 88px;
+    max-width: 45.1875rem;
+  }
+
+  .access-request__heading {
+    margin-bottom: 24px;
+    font-size: 3.25rem;
+    line-height: 119.231%;
+  }
+
+  .dots {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: 718px;
+  }
 }
